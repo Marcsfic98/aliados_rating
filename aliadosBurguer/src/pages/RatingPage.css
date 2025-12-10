@@ -1,0 +1,157 @@
+/* Estilos Gerais do Contêiner */
+.rating-container {
+    max-width: 600px;
+    margin:  auto;
+    
+    padding: 20px 20px 50px 20px;
+    background-color: #0a0a08;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    color: #333;
+    font-family: var(--font);
+}
+
+/* Estilos do Cabeçalho e Logo */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 150px; /* Ajuste conforme o tamanho real da sua logo */
+    height: 150px;
+    margin-bottom: 10px;
+    /* Para a logo .ico, verifique a compatibilidade ou use um formato como .png ou .svg */
+}
+
+.rating-container h1 {
+    font-size: 1.8em;
+    
+    color: #c49629; /* Cor primária, ajuste para a cor da sua marca (ex: a cor da logo) */
+}
+
+/* Estilos da Seção de Avaliação (Estrelas) */
+.rating-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #c49629;
+    border-radius: 4px;
+    background-color: #1e1d1d;
+    color: white;
+}
+
+.rating-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+}
+
+/* Estilos do Componente StarRating */
+.star-rating button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.star-rating button:focus {
+    outline: none;
+}
+
+.star-rating button:hover {
+    transform: scale(1.1);
+}
+
+.star-icon {
+    font-size: 2.5em; /* Tamanho das estrelas */
+}
+
+/* Estrela Preenchida e Vazia */
+.star-filled .star-icon {
+    color: #ffc107; /* Amarelo/Dourado para estrela preenchida */
+}
+
+.star-empty .star-icon {
+    color: #ccc; /* Cinza claro para estrela vazia */
+}
+
+/* Estilos da Seção de Sugestão */
+.suggestion-section {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.suggestion-section label {
+    display: block;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.infos label{
+    color: white;
+}
+
+.infos input{
+    padding: 9px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.suggestion-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+    min-height: 100px;
+    font-family: var(--font);
+}
+
+/* Estilos do Botão de Submissão */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #c49629; /* Cor verde para o botão de envio */
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.submit-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Estilos da Mensagem de Sucesso */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    left: 0;
+    top:190px;
+    position: absolute;
+}
